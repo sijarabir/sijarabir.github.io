@@ -2,13 +2,11 @@
 const nextConfig = {
   output: 'export',
   // No basePath needed for username.github.io repos
-  // basePath: '/sijarabir.github.io',
-  // assetPrefix: '/sijarabir.github.io/',
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   images: {
     unoptimized: true,
