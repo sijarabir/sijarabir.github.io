@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export",
+    "start": "serve out",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
@@ -67,6 +67,7 @@
     "@types/react-dom": "^19",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
